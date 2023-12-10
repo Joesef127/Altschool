@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+@font-face {
+  font-family: 'brown';
+  src: url('./Brown-Font/BrownMedium\ Regular.ttf');
+}
+
+@font-face {
+  font-family: 'sofia pro';
+  src: url('./sofiapro/Fonts/sofiapro-light.otf');
+}
+
+
+:root {
+  /* colors */
+  --background: #f7fdfc;
+  --green: #2ec4b6;
+  --white: #ffffff;
+  --heading: #000000;
+  --text: #737373;
+
+  /* typography */
+  --ff-1: 'brown', sans-serif;
+  --ff-2: 'sofia pro', 'open-sans';
+}
+
+body {
+  height: 100vh;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+}
+
+.wrapper {
+  width: 85%;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.first-wrapper{
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.first-wrapper-content {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 32px;
+
+  > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+
+    > h1 {
+      color: var(--heading);
+      font-size: 40px;
+      font-family: var(--ff-1);
+      font-style: normal;
+      font-weight: 700;
+      line-height: 50px; /* 125% */
+      letter-spacing: -0.8px;
+    }
+
+    > p {
+      color: var(--text);
+      font-family: var(--ff-1);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px; /* 156.25% */
+    }
+  }
+}
+
+.second-wrapper {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  height: fit-content;
+  background: var(--white);
+  border-radius: 6px;
+  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+}
+
+.second-wrapper-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: max-content;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  /* flex-wrap: wrap; */
+}
+
+.input-wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.activity-level, .password {
+  width: 100%;
+}
+
+label {
+  color: var(--heading);
+  font-family: var(--ff-2);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.1px;
+}
+
+input , select {
+  padding: 8px 16px;
+  border-radius: 2px;
+  border: 1px solid #F0F0F0;
+  font-family: var(--ff-2);
+}
+
+input:active, input:focus, input:hover, select:active, select:focus, select:hover {
+  border: 1px solid var(--green);
+  background: transparent;
+}
+
+.submit {
+  padding: 16px;
+  background: var(--green);
+  filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.10));
+  border-radius: 2px;
+  color: var(--white);
+  border: transparent;
+  cursor: pointer;
+  font-family: var(--ff-2);
+}
+
+.submit:hover {
+  background: #22b2a3;
+}
+
+.footer-text {
+  font-family: var(--ff-2);
+  color: var(--heading);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 178.571% */
+}
+
+.green-text {
+  color: var(--green);
+  font-weight: 500;
+  text-decoration-line: underline;
+}
+
+input[type=date]::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+input[type=date]::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+input[type=date]::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+  color: transparent;
+}
+
+
+@media screen and (max-width: 720px) {
+
+  .first-wrapper-content {
+    > div {
+      gap: 12px;
+
+      > h1 {
+        font-size: 30px;
+        line-height: normal;
+        font-weight: 700;
+      }
+  
+      > p {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+  .form-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .input-wrapper {
+    width: 100%;
+  }
+
+  .second-wrapper {
+    width: 100%;
+  }
+
+  .user-form {
+    flex-wrap: wrap;
+  }
+
+}
