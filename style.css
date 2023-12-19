@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -8,19 +8,19 @@
 
 :root {
   /* colors */
-  --deep-green: #038E7D;
-  --grey: #EDEFF2;
-  --placeholder: #646E7A;
-  --heading: #1D2C3C;
-  --line: #EDEFF2;
+  --deep-green: #038e7d;
+  --grey: #edeff2;
+  --placeholder: #646e7a;
+  --heading: #1d2c3c;
+  --line: #edeff2;
   --white: #ffffff;
-  --light-blue: #548BC5;
-  --bg: #F5F8FA;
-  --border: #1D2C3C;
-  --blue: #1179BF;
+  --light-blue: #548bc5;
+  --bg: #f5f8fa;
+  --border: #1d2c3c;
+  --blue: #1179bf;
 
   /* typography */
-  --ff: 'Lato', sans-serif;
+  --ff: "Lato", sans-serif;
 }
 
 ul {
@@ -30,7 +30,6 @@ ul {
 a {
   text-decoration: none;
 }
-
 
 body {
   background: var(--bg);
@@ -56,7 +55,7 @@ header {
 }
 
 .nav-item {
-  color: #1D2C3C;
+  color: #1d2c3c;
   text-align: center;
   font-family: Lato;
   font-size: 14px;
@@ -69,7 +68,8 @@ header {
   border-radius: 6px;
 }
 
-.nav-item:hover, .nav-item:focus {
+.nav-item:hover,
+.nav-item:focus {
   border: 2px solid var(--border);
 }
 
@@ -78,7 +78,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 100px 0
+  padding: 100px 0;
 }
 
 .wrapper {
@@ -98,7 +98,8 @@ main {
   background: var(--white);
   padding: 40px 0;
   border-radius: 6px 0 0 6px;
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05), 0px 15px 35px 0px rgba(43, 64, 78, 0.10);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05),
+    0px 15px 35px 0px rgba(43, 64, 78, 0.1);
 
   > div {
     padding: 30px 40px;
@@ -106,11 +107,11 @@ main {
 }
 
 .blue-bg {
-  background: #1179BF;
+  background: #1179bf;
 }
 
 .white-bg-heading {
-  color: #1D2C3C;
+  color: #1d2c3c;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: var(--ff);
   font-size: 30px;
@@ -138,7 +139,7 @@ main {
 }
 
 .circle-text {
-  color: #1D2C3C;
+  color: #1d2c3c;
   font-family: var(--ff);
   font-size: 18px;
   font-style: normal;
@@ -166,7 +167,7 @@ form {
 }
 
 label {
-  color: #1D2C3C;
+  color: #1d2c3c;
   font-family: Lato;
   font-size: 14px;
   font-style: normal;
@@ -181,6 +182,31 @@ input {
   padding: 10px 12px;
 }
 
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+/* input::-webkit-datetime-edit-fields-wrapper, */
+/* input::-webkit-inner-spin-button,
+input::-webkit-calendar-picker-indicator  {
+  -webkit-appearance: none;
+  display: none;
+  color: blue;
+} */
+
+
+/* input::-webkit-datetime-edit,
+input::-webkit-datetime-edit-text,
+input::-webkit-datetime-edit-day-field,
+input::-webkit-datetime-edit-year-field,
+input::-webkit-datetime-edit-month-field,
+input::-webkit-calendar-picker-indicator {
+  display: none;
+} */
+
 .fullname {
   width: 100%;
   display: flex;
@@ -192,11 +218,10 @@ input {
   }
 }
 
-
 .payment {
   display: flex;
   border-radius: 4px;
-  background: #EDEFF2;
+  background: #edeff2;
   width: fit-content;
   padding: 8px;
 
@@ -206,17 +231,17 @@ input {
   }
 
   > input ::placeholder {
-    color: #646E7A;
+    color: #646e7a;
   }
 }
 
 .card-num {
-  width: 60%;
+  width: 70%;
   padding: 0;
 }
 
 .date {
-  width: 30%;
+  width: 20%;
   padding: 0;
 }
 
@@ -253,7 +278,7 @@ input {
 }
 
 .form-text {
-  color: #646E7A;
+  color: #646e7a;
   font-family: var(--ff);
   font-size: 14px;
   font-style: normal;
@@ -262,8 +287,8 @@ input {
   letter-spacing: -0.01px;
 
   > span {
-  font-weight: 700;
-  color: var(--heading);
+    font-weight: 700;
+    color: var(--heading);
   }
 }
 
@@ -293,7 +318,7 @@ input {
 }
 
 .blue-bg-heading {
-  color: #FFF;
+  color: #fff;
   font-family: Lato;
   font-size: 20px;
   font-style: normal;
@@ -312,7 +337,7 @@ input {
 }
 
 .price-text {
-  color: #FFF;
+  color: #fff;
   font-family: var(--ff);
   font-size: 16px;
   font-style: italic;
@@ -374,7 +399,7 @@ input {
 }
 
 .client-div {
-      padding: 40px 0;
+  padding: 40px 0;
 
   > p:first-child {
     font-size: 16px;
@@ -390,21 +415,21 @@ input {
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.008px;
-    border-bottom: 3px solid #B9F5FF;
+    border-bottom: 3px solid #b9f5ff;
     width: fit-content;
   }
 }
 
 .reviews-div {
   padding: 42px 0;
-  border-top: 2px solid #B9F5FF;
+  border-top: 2px solid #b9f5ff;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 .reviews-text {
-  color: #FFF;
+  color: #fff;
   font-family: Lato;
   font-size: 18px;
   font-style: italic;
@@ -429,7 +454,7 @@ input {
 }
 
 .user-name {
-  color: #FFF;
+  color: #fff;
   font-family: Lato;
   font-size: 16px;
   font-style: normal;
@@ -439,7 +464,7 @@ input {
 }
 
 .footer-text {
-  color: #636B6F;
+  color: #636b6f;
   text-align: center;
   font-family: Lato;
   font-size: 14px;
@@ -449,7 +474,7 @@ input {
 }
 
 .link {
-  color: #31708F;
+  color: #31708f;
   font-family: Lato;
   font-size: 14px;
   font-style: normal;
