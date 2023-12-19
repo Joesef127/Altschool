@@ -149,6 +149,7 @@ input , select {
   border-radius: 2px;
   border: 1px solid #F0F0F0;
   font-family: var(--ff-2);
+  cursor: pointer;
 }
 
 input:active, input:focus, input:hover, select:active, select:focus, select:hover {
